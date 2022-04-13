@@ -156,20 +156,18 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
-@media(max-width:999px){
-#apresentacao{
-  display: block;
-  height: 1100px;
-  
-}
-.div-ap{
-    text-align: center;
-    overflow-y: hidden;
-    height: 500px;
-}
-.animated{
-    
-}
+@media(max-width:999px) {
+    #apresentacao {
+        display: block;
+        height: 1100px;
+
+    }
+
+    .div-ap {
+        text-align: center;
+        overflow-y: hidden;
+        height: 500px;
+    }
 }
 
 
@@ -269,9 +267,9 @@ main {
     margin-top: 50px;
 
 }
-.animated{
+
+.animated {
     display: flex;
     margin-top: 100px;
     margin: auto;
-   
 }
