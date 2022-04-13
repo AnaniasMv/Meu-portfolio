@@ -188,8 +188,8 @@ main {
         margin: auto;
         text-align: center;
         position: relative;
-        right:18px ;
-        top: -60px;
+        right:15px ;
+        top: -130px;
         max-width: 100px;
         min-width: 320px;
         overflow-y: hidden;
@@ -200,7 +200,7 @@ main {
 
     .animated{
         position: relative;
-        top: -30px;
+        top: -100px;
         max-width: 500px;
         min-width: 320px;
     }
