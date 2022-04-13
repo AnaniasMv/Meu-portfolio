@@ -204,6 +204,14 @@ main {
         max-width: 500px;
         min-width: 320px;
     }
+
+    #header{
+        padding: 20px;
+    }
+
+    #apresentacao{
+        height: 680px;
+    }
 }
 
 
