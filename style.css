@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&family=DM+Sans&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 * {
     margin: 0;
@@ -214,13 +214,11 @@ main {
     }
 }
 
-
-
 #quemSou {
     background-color: var(--cor2);
     display: flex;
     justify-content: space-around;
-    height: 800px;
+    height: 400px;
     max-width: 1200px;
     margin: auto;
     margin-top: 30px;
@@ -265,16 +263,9 @@ main {
     display: grid;
     max-width: 1600px;
     margin: auto;
-    grid-row-gap: 200px;
-    grid-column-gap: 90px;
+    grid-row-gap: 100px;
+    grid-column-gap: 50px;
     grid-template-areas:
-        "img img  img "
-        "img  img  img "
-        "img  img  img "
-        "img  img  img "
-        "img  img  img "
-        "img  img  img "
-        "img  img  img "
         "img  img  img "
         "img  img  img ";
     padding: 20px;
@@ -282,8 +273,27 @@ main {
 
 }
 
+.projetos{
+
+}
+
 .animated {
     display: flex;
     margin-top: 100px;
     margin: auto;
+}
+
+.pj{
+    height: 300px;
+    max-width: max-content;
+    background-color: #14111f;
+    transition: 2s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.pj:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.2);
+
 }
