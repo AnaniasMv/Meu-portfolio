@@ -157,10 +157,6 @@ main {
 }
 
 
-
-
-
-
 #apresentacao h1 {
     position: relative;
     font-size: 50px;
@@ -193,15 +189,18 @@ main {
         text-align: center;
         position: relative;
         right:18px ;
+        top: -60px;
         max-width: 100px;
         min-width: 320px;
         overflow-y: hidden;
-        height: 600px;
+        height: 550px;
     }
 
 
 
     .animated{
+        position: relative;
+        top: -30px;
         max-width: 500px;
         min-width: 320px;
     }
