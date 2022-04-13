@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*===================================Variaveis cor==================================*/
+:root {
+    --cor1: #0E091B;
+    --cor2: #110E1B;
+    --cor3: #134BE8;
+}
+
+/*=================================================================================*/
+
+html,
+body {
+    font-family: Ubuntu, Arial;
+    color: white;
+    background-color: var(--cor1);
+}
+
+/*==================================== Menu =====================================*/
+header a {
+    color: rgb(163, 162, 162);
+    text-decoration: none;
+    padding: 30px;
+}
+
+
+#header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+
+#menu li a:hover {
+    color: var(--cor3);
+}
+
+#menu li {
+    transition: .2s;
+}
+
+#menu a {
+    display: block;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width:915px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 120px;
+        right: 0;
+        background-color: var(--cor2);
+        height: 0;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: 800px;
+        visibility: visible;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        font-size: 20px;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+        text-align: center;
+        line-height: 110px;
+        color: white;
+    }
+
+    #btn-mobile {
+        margin-top: 8px;
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1.1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: black;
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 35px;
+        color: white;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        display: block;
+        content: '';
+        width: 35px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+/*================================== Fim menu ====================================*/
+
+main {
+    max-width: 100%;
+    min-width: 300px;
+}
+
+#apresentacao {
+    display: grid;
+    height: 750px;
+    overflow-y: hidden;
+    max-width: 1300px;
+    min-width: 320px;
+    margin: auto;
+    grid-column-gap: 90px;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media(max-width:999px){
+#apresentacao{
+  display: block;
+  height: 1100px;
+  
+}
+.div-ap{
+    text-align: center;
+    overflow-y: hidden;
+    height: 500px;
+}
+.animated{
+    
+}
+}
+
+
+@media(max-width:600px) {
+    #apresentacao {
+        text-align: center;
+    }
+
+    #quemSou img {
+        display: none;
+    }
+}
+
+#apresentacao h1 {
+    position: relative;
+    top: 240px;
+    left: 20px;
+}
+
+
+#btn-i {
+    border: 1px solid var(--cor3);
+    font-family: 'DM Sans, sans-serif';
+    font-size: 20px;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor3));
+    padding: 17px;
+    width: 250px;
+    color: white;
+    position: relative;
+    top: 240px;
+    left: 20px;
+}
+
+
+
+
+#quemSou {
+    background-color: var(--cor2);
+    display: flex;
+    justify-content: space-around;
+    height: 800px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+
+
+.anim:after {
+    content: "|";
+    margin-left: 8px;
+    opacity: 1;
+    animation: animate 0.8s linear infinite;
+    color: var(--cor3);
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#article-qs {
+    max-height: 300px;
+}
+
+.fundo {
+    background-color: var(--cor2);
+}
+
+.grid-layout {
+    display: grid;
+    max-width: 1600px;
+    margin: auto;
+    grid-row-gap: 200px;
+    grid-column-gap: 90px;
+    grid-template-areas:
+        "img img  img "
+        "img  img  img "
+        "img  img  img "
+        "img  img  img "
+        "img  img  img "
+        "img  img  img "
+        "img  img  img "
+        "img  img  img "
+        "img  img  img ";
+    padding: 20px;
+    margin-top: 50px;
+
+}
+.animated{
+    display: flex;
+    margin-top: 100px;
+    margin: auto;
+   
+}
