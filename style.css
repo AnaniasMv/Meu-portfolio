@@ -149,7 +149,7 @@ main {
     display: grid;
     height: 750px;
     overflow-y: hidden;
-    max-width: 1300px;
+    max-width: 1000px;
     min-width: 320px;
     margin: auto;
     grid-column-gap: 90px;
@@ -159,12 +159,14 @@ main {
 @media(max-width:999px) {
     #apresentacao {
         display: block;
-        height: 1100px;
+        
+        height: 1200px;
 
     }
 
     .div-ap {
-        text-align: center;
+        margin: auto;
+        max-width: 500px;
         overflow-y: hidden;
         height: 500px;
     }
