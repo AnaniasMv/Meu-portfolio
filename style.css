@@ -226,6 +226,9 @@ main {
     #quemSou picture {
         display: none;
     }
+   .pj{
+       padding: 20px;
+   }
 }
 
 #quemSou {
@@ -276,6 +279,9 @@ main {
 
 .projetos {
     height: 1500px;
+    margin: 50px;
+    margin: auto;
+
 
 }
 
@@ -287,24 +293,22 @@ main {
 
 .grid-layout {
     display: grid;
-    max-width: 1400px;
+    max-width: 1500px;
     min-width: 320px;
     grid-row-gap: 100px;
     grid-column-gap: 100px;
     grid-template-areas:
         "pj  pj  pj ";
-  
     margin-top: 50px;
     overflow-y: hidden;
-    padding: 80px;
     margin: auto;
+
 }
 
 
 .pj {
     margin: auto;
-    height: 300px;;
-    max-width: max-content;
+    max-height: 300px;
     background-color: #14111f;
     transition: 2s;
     transition: all 0.5s;
@@ -312,7 +316,7 @@ main {
 }
 
 
-@media(max-width:1400px){
+@media(max-width:1100px){
     .grid-layout {
         grid-template-areas:
             "pj"
@@ -325,9 +329,10 @@ main {
     }
 }
 
-.pj a img{
-    background-size: cover;
+.pj img{
     max-width: 100%;
+    
+
 }
 
 .pj:hover {
