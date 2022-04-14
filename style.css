@@ -212,6 +212,22 @@ main {
     #apresentacao{
         height: 680px;
     }
+
+    .grid-layout{
+        display: grid;
+        max-width: 1500px;
+        margin: auto;
+        grid-row-gap: 100px;
+        grid-column-gap: 50px;
+        grid-template-areas:
+            "pj"
+            "pj"
+            "pj";
+        padding: 20px;
+        margin-top: 50px;
+        overflow-y: hidden;
+    
+    }
 }
 
 #quemSou {
@@ -261,20 +277,20 @@ main {
 
 .grid-layout {
     display: grid;
-    max-width: 1600px;
+    max-width: 1500px;
     margin: auto;
     grid-row-gap: 100px;
     grid-column-gap: 50px;
     grid-template-areas:
-        "img  img  img "
         "img  img  img ";
     padding: 20px;
     margin-top: 50px;
+    overflow-y: hidden;
 
 }
 
 .projetos{
-
+height: 700px;
 }
 
 .animated {
@@ -296,4 +312,9 @@ main {
     -webkit-transform: scale(1.5);
     transform: scale(1.2);
 
+}
+
+.servicos{
+    
+    height: 500px;
 }
