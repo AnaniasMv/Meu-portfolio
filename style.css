@@ -143,17 +143,22 @@ header a {
 main {
     max-width: 100%;
     min-width: 300px;
+
+
 }
 
 #apresentacao {
     display: grid;
+    position: relative;
+    top: -50px;
     height: 750px;
     overflow-y: hidden;
     max-width: 1000px;
-    min-width: 320px;
+    min-width: 300px;
     margin: auto;
     grid-column-gap: 90px;
     grid-template-columns: 1fr 1fr;
+    padding: 30px;
 }
 
 
@@ -178,6 +183,7 @@ main {
     left: 20px;
 }
 
+
 @media(max-width:999px) {
     #apresentacao {
         display: block;
@@ -188,7 +194,7 @@ main {
         margin: auto;
         text-align: center;
         position: relative;
-        right:15px ;
+        right: 15px;
         top: -180px;
         max-width: 100px;
         min-width: 320px;
@@ -198,35 +204,27 @@ main {
 
 
 
-    .animated{
+    .animated {
         position: relative;
-        top: -180px;
-        max-width: 500px;
-        min-width: 320px;
+        top: -200px;
+        max-width: 360px;
+        min-width: 300px;
     }
 
-    #header{
+    #header {
         padding: 20px;
     }
 
-    #apresentacao{
+    #apresentacao {
         height: 680px;
     }
 
-    .grid-layout{
-        display: grid;
-        max-width: 1500px;
-        margin: auto;
-        grid-row-gap: 100px;
-        grid-column-gap: 50px;
-        grid-template-areas:
-            "pj"
-            "pj"
-            "pj";
-        padding: 20px;
-        margin-top: 50px;
-        overflow-y: hidden;
-    
+}
+
+
+@media (max-width:600px) {
+    #quemSou picture {
+        display: none;
     }
 }
 
@@ -275,22 +273,10 @@ main {
     background-color: var(--cor2);
 }
 
-.grid-layout {
-    display: grid;
-    max-width: 1500px;
-    margin: auto;
-    grid-row-gap: 100px;
-    grid-column-gap: 50px;
-    grid-template-areas:
-        "img  img  img ";
-    padding: 20px;
-    margin-top: 50px;
-    overflow-y: hidden;
 
-}
+.projetos {
+    height: 1500px;
 
-.projetos{
-height: 700px;
 }
 
 .animated {
@@ -299,8 +285,25 @@ height: 700px;
     margin: auto;
 }
 
-.pj{
-    height: 300px;
+.grid-layout {
+    display: grid;
+    max-width: 1400px;
+    min-width: 320px;
+    grid-row-gap: 100px;
+    grid-column-gap: 100px;
+    grid-template-areas:
+        "pj  pj  pj ";
+  
+    margin-top: 50px;
+    overflow-y: hidden;
+    padding: 80px;
+    margin: auto;
+}
+
+
+.pj {
+    margin: auto;
+    height: 300px;;
     max-width: max-content;
     background-color: #14111f;
     transition: 2s;
@@ -308,13 +311,31 @@ height: 700px;
     cursor: pointer;
 }
 
-.pj:hover{
+
+@media(max-width:1400px){
+    .grid-layout {
+        grid-template-areas:
+            "pj"
+            "pj"
+            "pj"
+    }
+
+    .pj{
+        background-size: cover;
+    }
+}
+
+.pj a img{
+    background-size: cover;
+    max-width: 100%;
+}
+
+.pj:hover {
     -webkit-transform: scale(1.5);
     transform: scale(1.2);
 
 }
 
-.servicos{
-    
+.servicos {
     height: 500px;
 }
