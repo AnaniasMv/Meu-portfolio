@@ -231,7 +231,7 @@ main {
 
 
 .projetos {
-    height: 700px;
+    height: 750px;
     margin: auto;
     overflow-y: hidden;
 }
@@ -262,6 +262,7 @@ main {
     background-color: #14111f;
     cursor: pointer;
     overflow: hidden;
+    padding: 20px;
 }
 
 
@@ -283,8 +284,16 @@ main {
 }
 
 .servicos {
-    height: 500px;
+    max-height: 1400px;
     background-color: var(--cor2);
+    margin: auto;
+}
+
+.sv{
+    margin: auto;
+    background-color: #0E091B;
+    max-width: 350px;
+    padding: 20px;
 }
 
 @media(max-width:999px) {
@@ -331,11 +340,8 @@ main {
             "pj"
     }
 
-    .pj{
-        background-size: cover;
-    }
     .projetos{
-        height: 1800px;
+        height: 1600px;
     }
 }
 
@@ -345,7 +351,4 @@ main {
     #quemSou picture {
         display: none;
     }
-   .pj{
-       padding: 20px;
-   }
 }
