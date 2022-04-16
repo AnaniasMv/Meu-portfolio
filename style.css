@@ -140,10 +140,7 @@ header a {
 /*================================== Fim menu ====================================*/
 
 main {
-    max-width: 100%;
-    min-width: 300px;
-
-
+    overflow: hidden;
 }
 
 #apresentacao {
@@ -188,11 +185,21 @@ main {
     background-color: var(--cor2);
     display: flex;
     justify-content: space-around;
-    height: 400px;
+    height: 500px;
     max-width: 1200px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 100px;
     padding: 20px;
+}
+
+.div-cs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conhecimentos{
+    position: relative;
+    margin-top: -120px;
 }
 
 
@@ -231,7 +238,10 @@ main {
 
 
 .projetos {
-    height: 750px;
+    background-color: var(--cor2);
+    height: 800px;
+    position: relative;
+    top: 130px;
     margin: auto;
     overflow-y: hidden;
 }
@@ -255,6 +265,7 @@ main {
     margin: auto;
     text-align: center;
 }
+
 
 
 .pj {
@@ -283,14 +294,15 @@ main {
 }
 
 .servicos {
-    height: 1500px;
-    background-color: var(--cor2);
+    height: 650px;
     margin: auto;
+    position: relative;
+    top: 180px;
 }
 
 .sv{
     margin: auto;
-    background-color: #0E091B;
+    background-color: var(--cor2);
     max-width: 350px;
     padding: 20px;
 }
@@ -339,9 +351,12 @@ main {
             "pj"
     }
 
-    .projetos{
+    .projetos,
+    .servicos{
         height: 1600px;
     }
+
+
 }
 
 
