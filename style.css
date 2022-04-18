@@ -1,27 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&family=DM+Sans&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Open+Sans:wght@300;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
-::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: var(--cor1);
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: var(--cor1);
 }
 
-::-webkit-scrollbar
-{
-	width: 8px;
-	background-color: var(--cor1);
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--cor1);
 }
 
-::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: var(--cor3);
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: var(--cor3);
 }
 
 /*===================================Variaveis cor==================================*/
@@ -66,7 +65,7 @@ header a {
     gap: 1rem;
 }
 
-#menu li a{
+#menu li a {
     transition: .2s;
 }
 
@@ -90,7 +89,7 @@ header a {
 
 main {
     overflow: hidden;
-  
+
 }
 
 #apresentacao {
@@ -113,14 +112,14 @@ main {
     left: 20px;
 }
 
-.div-ap{
-    top: 150px;
+.div-ap {
+    top: 120px;
 }
 
 
 #btn-i {
     border: 1px solid var(--cor3);
-    font-family:'DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 17px;
     background-image: linear-gradient(to right, var(--cor1), var(--cor3));
     padding: 17px;
@@ -130,16 +129,17 @@ main {
     position: relative;
     top: 240px;
     left: 20px;
-   cursor: pointer;
+    cursor: pointer;
     transition: .5s;
     text-align: center;
 
-    
+
 }
-#btn-i:hover{
+
+#btn-i:hover {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 29px var(--cor3);
     box-shadow: inset 0 0 32px var(--cor3), 0 0 32px var(--cor3);
-    color:white;
+    color: white;
     border: 5px solid var(--cor3);
     width: 310px;
 }
@@ -156,31 +156,32 @@ main {
     padding: 20px;
 }
 
-#quemSou picture{
-overflow: hidden;
+#quemSou picture {
+    overflow: hidden;
 }
 
 
 
 
-.div-cs{
+.div-cs {
     display: flex;
     justify-content: space-evenly;
 }
 
-@media (max-width:700px){
-    .div-cs{
+@media (max-width:700px) {
+    .div-cs {
         flex-wrap: wrap;
         gap: 50px;
         width: 100%;
     }
 }
 
-#conhecimentos{
+#conhecimentos {
     position: relative;
     margin-top: -140px;
 }
-.cards{
+
+.cards {
 
     padding: 15px;
     text-align: center;
@@ -260,22 +261,21 @@ overflow: hidden;
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid #6E6C72;
+    transition: .5s;
 }
 
 
-.pj img{
-    max-width: 100%;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
+.pj img {
+    width: 100%;
 }
 
-.pj img:hover{
-    -webkit-transform: scale(1.1);
-   transform: scale(1.1);
+.pj img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1);
 }
 
 .pj:hover {
-    -webkit-transform: scale(1.5);
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
 
 }
@@ -287,7 +287,7 @@ overflow: hidden;
     top: 180px;
 }
 
-.sv{
+.sv {
     margin: auto;
     background-color: var(--cor2);
     max-width: 350px;
@@ -297,12 +297,12 @@ overflow: hidden;
 @media(max-width:999px) {
     #apresentacao {
         display: block;
-        height:800px;
+        height: 800px;
 
     }
 
     .div-ap {
-        margin:0 auto;
+        margin: 0 auto;
         text-align: center;
         position: relative;
         right: 18px;
@@ -310,8 +310,8 @@ overflow: hidden;
         max-width: 100px;
         min-width: 320px;
         overflow: hidden;
-        height:550px;
-        
+        height: 550px;
+
     }
 
 
@@ -321,7 +321,7 @@ overflow: hidden;
         top: -150px;
         max-width: 360px;
         min-width: 300px;
-        
+
     }
 
     #header {
@@ -403,7 +403,7 @@ overflow: hidden;
     }
 }
 
-@media(max-width:1100px){
+@media(max-width:1100px) {
     .grid-layout {
         grid-template-areas:
             "pj"
@@ -411,27 +411,27 @@ overflow: hidden;
             "pj"
     }
 
-    #quemSou img{
+    #quemSou img {
         margin-bottom: 30px;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #servicos{
+    #servicos {
         height: 1550px;
     }
 
-    #projetos{
+    #projetos {
         height: 1600px;
     }
 
 
-    #quemSou{
+    #quemSou {
         display: block;
     }
 
-    #conhecimentos{
+    #conhecimentos {
         margin-top: 100px;
     }
 
@@ -439,9 +439,16 @@ overflow: hidden;
 
 
 
-@media (max-width:600px) {
-   
-    header h1{
+@media (max-width:500px) {
+
+    header h1 {
         font-size: 27px;
+    }
+
+   
+
+
+    .anim {
+        font-size: 21px;
     }
 }

@@ -14,14 +14,14 @@
 
 <body>
 
-    <header id="header">
+    <header class="header" id="header">
         <h1><span style="color: #134BE8;">MV</span>CODE</h1>
         <nav id="nav">
-            <ul class="nav" id="menu">
-                <li><a href="#qSou">Quem sou</a></li>
-                <li><a href="#conhecimentos">Conhecimentos</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#projetos">Projetos</a></li> 
+            <ul id="menu">
+                <li><a href="#qSou" class="btnMenu1">Quem sou</a></li>
+                <li><a href="#conhecimentos" class="btnMenu2">Conhecimentos</a></li>
+                <li><a href="#servicos" class="btnMenu3">Serviços</a></li>
+                <li><a href="#projetos" class="btnMenu4">Projetos</a></li>
             </ul>
             <button id="btn-mobile" aria-expanded="false">
                 <span id="hamburger"></span>
@@ -495,12 +495,12 @@
             </svg>
         </section>
 
-        <div class="fundo">
+        <div id="qSou" class="fundo">
             <section id="quemSou" data-aos="fade-down">
                 <picture style="overflow-y:hidden;"><img src="img/eu.png" width="200px" style="border-radius: 90%;"
                         alt=""></picture>
                 <article id="article-qs">
-                    <h2  style="font-size: 45px; margin-bottom: 30px; font-family: IBM Plex Sans , sans-serif;">Quem sou
+                    <h2 style="font-size: 45px; margin-bottom: 30px; font-family: IBM Plex Sans , sans-serif;">Quem sou
                         <span style="font-size: 40px; color: #134BE8;">.</span>
                     </h2>
                     <p style="font-size: 20px; font-family: DM Sans, sans-serif;">Meu nome é Matheus Vinicius. Sou
@@ -512,30 +512,30 @@
             </section>
         </div>
 
-        <section  id="conhecimentos">
-            <h2 data-aos="fade-down"
+        <section id="conhecimentos" data-aos="fade-down">
+            <h2
                 style="font-size: 30px; font-family: IBM Plex Sans , sans-serif; font-weight: lighter; text-align: center; margin-bottom: 40px;">
                 Conhecimentos </h2>
             <article>
                 <div class="div-cs">
-                    <div class="cards" data-aos="fade-down">
+                    <div class="cards">
                         <h2>HTML</h2>
                         <picture><img src="img/html.png" alt="html5"></picture>
                     </div>
 
-                    <div class="cards" data-aos="fade-down">
+                    <div class="cards">
                         <h2>CSS</h2>
                         <picture><img src="img/css.png" alt="css3"></picture>
                     </div>
-                    <div class="cards" data-aos="fade-down">
+                    <div class="cards">
                         <h2>JavaScript</h2>
                         <picture><img src="img/js.png" alt="JavaScript"></picture>
                     </div>
-                    <div class="cards" data-aos="fade-down">
+                    <div class="cards">
                         <h2>Bootstrap</h2>
                         <picture><img src="img/bootstrap.png" alt="Bootstrap"></picture>
                     </div>
-                    <div class="cards" data-aos="fade-down">
+                    <div class="cards">
                         <h2>NodeJs</h2>
                         <picture><img src="img/node.png" alt="NodeJs"></picture>
                     </div>
@@ -543,7 +543,7 @@
             </article>
         </section>
 
-        <section  id="servicos" data-aos="fade-down">
+        <section id="servicos" data-aos="fade-down">
             <h2 style="text-align: center; margin-bottom: 50px; font-size: 40px;">Serviços <span
                     style="color: #134BE8;">.</span></h2>
             <div class="grid-layout">
@@ -558,7 +558,7 @@
 
                 </article>
 
-                <article style="height: 300px;" class="sv" data-aos="fade-down">
+                <article style="height: 300px;" class="sv" >
                     <picture><img src="img/responsivo.png" width="200px" height="180px" alt=""></picture>
                     <h2 style="font-family: 'Chakra Petch', sans-serif; font-weight: 300;">Responsividade</h2>
                     <p style="color:#6E6C72; margin-top: 10px;">Um design responsivo torna seu site acessível a todos os
@@ -566,7 +566,7 @@
                         independentemente do dispositivo.</p>
                 </article>
 
-                <article style="height: 300px;" class="sv" data-aos="fade-down">
+                <article style="height: 300px;" class="sv" >
                     <picture><img style="margin-top: 50px;" src="img/code1.png" alt=""></picture>
                     <h2 style="font-family: 'Chakra Petch', sans-serif; font-weight: 300; margin-top: 10px;">
                         Desenvolvimento</h2>
@@ -580,7 +580,7 @@
                 style="font-size: 40px; margin-bottom: 80px; font-family: IBM Plex Sans , sans-serif; text-align: center; font-weight: 500;">
                 Projetos<span style="font-size: 40px; color: #134BE8;">.</span> </h2>
             <div class="grid-layout">
-                <article class="pj">
+                <article class="pj" >
                     <a href="https://ananiasmv.github.io/Casa-do-espeto/">
                         <img src="img/cs.png" alt="">
                     </a>
@@ -590,13 +590,13 @@
                     <p style="color: #6E6C72; font-size: 18px; padding: 5px;">Realizado para fins
                         de conhecimentos</p>
                 </article>
-                <article class="pj" data-aos="fade-down">
+                <article class="pj" >
                     <picture><img src="img/Storyboard-amico.png" height="270px" alt="projeto em desenvolvimento..">
                     </picture>
                     <h2 style="font-family: 'Chakra Petch', sans-serif; font-size: 17px; padding: 5px;">EM BREVE</h2>
                     <p style="color: #6E6C72; font-size: 18px; padding: 5px;">Projeto em desenvolvimento...</p>
                 </article>
-                <article class="pj" data-aos="fade-down">
+                <article class="pj">
                     <picture><img src="img/Storyboard-amico.png" height="270px" alt="projeto em desenvolvimento..">
                     </picture>
                     <h2 style="font-family: 'Chakra Petch', sans-serif;  font-size: 17px; padding: 5px;">EM BREVE</h2>
@@ -637,7 +637,9 @@
         });
     </script>
 
-    <script></script>
+    <script>
+
+    </script>
 </body>
 
 </html>
