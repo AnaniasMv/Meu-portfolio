@@ -13,22 +13,22 @@
 </head>
 
 <body>
-    <!----Menu---------->
+
     <header id="header">
         <h1><span style="color: #134BE8;">MV</span>CODE</h1>
         <nav id="nav">
-            <ul id="menu">
-                <li><a href="index.html">Quem sou</a></li>
-                <li><a href="cardapio.html">Projetos</a></li>
-                <li><a href="localização.html">Serviços</a></li>
-                <li><a href="contato.html">Conhecimentos</a></li>
+            <ul class="nav" id="menu">
+                <li><a href="#qSou">Quem sou</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#projetos">Projetos</a></li> 
             </ul>
             <button id="btn-mobile" aria-expanded="false">
                 <span id="hamburger"></span>
             </button>
         </nav>
     </header>
-    <!----FIM MENU------>
+
     <main>
         <section id="apresentacao" data-aos="fade-down">
             <div class="div-ap">
@@ -37,9 +37,11 @@
                 <h1 style="font-family: DM Sans, sans-serif; font-size: 24px; font-weight: 500; margin-bottom: 30px;">
                     <span class="anim"></span>
                 </h1>
-                <button id="btn-i">CONTRATE-ME</button>
- 
+                <a href="https://api.whatsapp.com/send?phone=5516994538631&text=Ol%C3%A1%2C%20vamos%20trabalhar%20juntos%3F"
+                    target="_blank"><button id="btn-i">CONTRATE-ME</button></a>
+
             </div>
+
             <svg class="animated" id="freepik_stories-developer-activity" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 500 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:svgjs="http://svgjs.com/svgjs">
@@ -492,12 +494,13 @@
                 </defs>
             </svg>
         </section>
-        <div class="fundo">
+
+        <div id="qSou" class="fundo">
             <section id="quemSou" data-aos="fade-down">
-                <picture style="overflow-y:hidden;"><img src="img/img.jpeg" width="200px" style="border-radius: 50%;"
+                <picture style="overflow-y:hidden;"><img src="img/eu.png" width="200px" style="border-radius: 90%;"
                         alt=""></picture>
                 <article id="article-qs">
-                    <h2 style="font-size: 45px; margin-bottom: 30px; font-family: IBM Plex Sans , sans-serif;">Quem sou
+                    <h2  style="font-size: 45px; margin-bottom: 30px; font-family: IBM Plex Sans , sans-serif;">Quem sou
                         <span style="font-size: 40px; color: #134BE8;">.</span>
                     </h2>
                     <p style="font-size: 20px; font-family: DM Sans, sans-serif;">Meu nome é Matheus Vinicius. Sou
@@ -508,13 +511,13 @@
                 </article>
             </section>
         </div>
-        <section class="conhecimentos" >
+
+        <section  id="conhecimentos">
             <h2 data-aos="fade-down"
                 style="font-size: 30px; font-family: IBM Plex Sans , sans-serif; font-weight: lighter; text-align: center; margin-bottom: 40px;">
                 Conhecimentos </h2>
             <article>
                 <div class="div-cs">
-
                     <div class="cards" data-aos="fade-down">
                         <h2>HTML</h2>
                         <picture><img src="img/html.png" alt="html5"></picture>
@@ -540,8 +543,7 @@
             </article>
         </section>
 
-
-        <section class="servicos" data-aos="fade-down">
+        <section  id="servicos" data-aos="fade-down">
             <h2 style="text-align: center; margin-bottom: 50px; font-size: 40px;">Serviços <span
                     style="color: #134BE8;">.</span></h2>
             <div class="grid-layout">
@@ -573,7 +575,7 @@
             </div>
         </section>
 
-        <section class="projetos" data-aos="fade-down">
+        <section id="projetos" data-aos="fade-down">
             <h2
                 style="font-size: 40px; margin-bottom: 80px; font-family: IBM Plex Sans , sans-serif; text-align: center; font-weight: 500;">
                 Projetos<span style="font-size: 40px; color: #134BE8;">.</span> </h2>
@@ -607,10 +609,14 @@
                     Repositórios no github</h2>
             </a>
         </section>
+
     </main>
+    <footer>
+
+    </footer>
     <script src="js/script.js"></script>
     <script src="js/typed.js"></script>
-    
+
     <script>
         var typed = new Typed('.anim', {
             strings: [
@@ -631,7 +637,7 @@
         });
     </script>
 
-
+    <script></script>
 </body>
 
 </html>
