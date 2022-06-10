@@ -298,6 +298,7 @@ main {
     #apresentacao {
         display: block;
         height: 800px;
+        text-align: center;
 
     }
 
@@ -349,6 +350,8 @@ main {
     }
 
     #menu a {
+        display: flex;
+        justify-content: center;
         padding: 1rem 0;
         margin: 0 1rem;
         font-size: 20px;
