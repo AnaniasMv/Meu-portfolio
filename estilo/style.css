@@ -174,7 +174,6 @@ main {
     justify-content: space-evenly;
 }
 
-
 #conhecimentos {
     position: relative;
     margin-top: -140px;
@@ -182,7 +181,7 @@ main {
 }
 
 .cards {
-
+    max-width: 220px;
     padding: 15px;
     text-align: center;
     font-size: 13px;
