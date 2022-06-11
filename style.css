@@ -78,6 +78,9 @@ header a {
     display: block;
     font-size: 20px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    position: relative;
+    right: 15px;
 }
 
 #btn-mobile {
@@ -171,13 +174,6 @@ main {
     justify-content: space-evenly;
 }
 
-@media (max-width:700px) {
-    .div-cs {
-        flex-wrap: wrap;
-        gap: 50px;
-        width: 100%;
-    }
-}
 
 #conhecimentos {
     position: relative;
@@ -229,7 +225,7 @@ main {
     background-color: var(--cor2);
     height: 800px;
     position: relative;
-    top: 130px;
+    top: 100px;
     margin: auto;
     overflow-y: hidden;
     padding: 25px;
@@ -243,6 +239,8 @@ main {
 
 .grid-layout {
     display: grid;
+    position: relative;
+    top: 30px;
     max-width: 1300px;
     min-width: 320px;
     grid-row-gap: 100px;
@@ -289,7 +287,7 @@ main {
     height: 650px;
     margin: auto;
     position: relative;
-    top: 250px;
+    top: 100px;
     padding: 25px;
 }
 
@@ -310,7 +308,15 @@ main {
     margin: auto;
     border-top: 1px solid rgba(148, 148, 163, 0.2);
     max-width: 1300px;
+    font-size: 14px;
 }
+
+.footer-layout p {
+    position: relative;
+    right: 30px;
+}
+
+/*===================================Medias Queries==================================*/
 
 @media(max-width:999px) {
     #apresentacao {
@@ -455,12 +461,21 @@ main {
 
     #quemSou {
         display: block;
+        top: 0;
     }
 
     #conhecimentos {
         margin-top: 100px;
     }
 
+}
+
+@media (max-width:700px) {
+    .div-cs {
+        flex-wrap: wrap;
+        gap: 50px;
+        width: 100%;
+    }
 }
 
 
