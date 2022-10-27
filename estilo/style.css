@@ -150,8 +150,6 @@ main {
 #quemSou {
     display: flex;
     position: relative;
-    top: 80px;
-    justify-content: space-around;
     height: 500px;
     max-width: 1200px;
     margin: auto;
@@ -440,6 +438,12 @@ main {
             "pj"
             "pj"
             "pj"
+    }
+
+    #quemSou{
+        text-align: center;
+        display: flex;
+        align-items: center;
     }
 
     #quemSou img {
