@@ -15,7 +15,9 @@
 <body>
 
     <header class="header" id="header">
-        <a href="https://ananiasmv.github.io/Meu-Portfolio/"><h1><span style="color: #134BE8;">MV</span>CODE</h1></a>
+        <a href="https://ananiasmv.github.io/Meu-Portfolio/">
+            <h1><span style="color: #134BE8;">MV</span>CODE</h1>
+        </a>
         <nav id="nav">
             <ul id="menu">
                 <li><a href="#qSou" class="btnMenu1">Quem sou</a></li>
@@ -601,7 +603,8 @@
                         <picture><img src="img/bgprojeto.png" alt="Pagina de vendas">
                         </picture>
                     </a>
-                    <h2 style="font-family: 'Chakra Petch', sans-serif;  font-size: 17px; padding: 5px;">Página Curso Online</h2>
+                    <h2 style="font-family: 'Chakra Petch', sans-serif;  font-size: 17px; padding: 5px;">Página Curso
+                        Online</h2>
                     <p style="color: #6E6C72; font-size: 18px; padding: 5px;">Landing page Investimentos</p>
                 </article>
 
@@ -610,7 +613,8 @@
                         <picture><img src="img/drabg.png" alt="Pagina de vendas">
                         </picture>
                     </a>
-                    <h2 style="font-family: 'Chakra Petch', sans-serif;  font-size: 17px; padding: 5px;">Site Institucional + Blog</h2>
+                    <h2 style="font-family: 'Chakra Petch', sans-serif;  font-size: 17px; padding: 5px;">Site
+                        Institucional + Blog</h2>
                     <p style="color: #6E6C72; font-size: 18px; padding: 5px;">Site Pessoal e blog</p>
                 </article>
             </div>
@@ -651,9 +655,25 @@
         });
     </script>
 
+    <!-- Meta Pixel Code -->
     <script>
-
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1450145065753453');
+        fbq('track', 'PageView');
     </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1450145065753453&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </body>
 
 </html>
