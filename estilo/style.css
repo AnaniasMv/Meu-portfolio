@@ -237,7 +237,6 @@ main {
 .grid-layout {
     display: grid;
     position: relative;
-    top: 30px;
     max-width: 1300px;
     min-width: 320px;
     grid-row-gap: 100px;
