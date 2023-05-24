@@ -225,7 +225,7 @@ main {
     top: 100px;
     margin: auto;
     overflow-y: hidden;
-    padding: 25px;
+    padding: auto;
 }
 
 .animated {
