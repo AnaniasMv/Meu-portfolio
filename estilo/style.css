@@ -147,22 +147,9 @@ main {
     width: 310px;
 }
 
-#quemSou {
-    display: flex;
-    position: relative;
-    height: 500px;
-    max-width: 1200px;
-    margin: auto;
-    padding: 25px;
-}
 
 #article-qs {
     max-width: 700px;
-}
-
-
-#quemSou picture {
-    overflow: hidden;
 }
 
 
@@ -211,17 +198,41 @@ main {
     }
 }
 
-
+#quemSou {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 550px;
+    padding: 25px;
+}
 
 .fundo {
     background-color: var(--cor2);
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    /* Ajuste a largura máxima conforme necessário */
+    margin: 0 auto;
+}
+
+.image-wrapper img {
+    width: 315px;
+    /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+.text-wrapper {
+    margin-left: 35px;
+    /* Ajuste a margem conforme necessário */
 }
 
 
 #projetos {
     background-color: var(--cor2);
     height: auto;
-    position: relative;
     top: 100px;
     margin: auto;
     overflow-y: hidden;
@@ -439,26 +450,8 @@ main {
             "pj"
     }
 
-    #quemSou{
-        text-align: center;
-        display: flex;
-        align-items: center;
-    }
-
-    #quemSou img {
-        margin-bottom: 30px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     #servicos {
         height: 1550px;
-    }
-    
-    #quemSou {
-        display: block;
-        top: 0;
     }
 
     #conhecimentos {
@@ -485,5 +478,38 @@ main {
 
     .anim {
         font-size: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    #quemSou {
+        flex-direction: column;
+        height: 650px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .image-wrapper {
+        justify-content: center;
+        margin: auto;
+        /* Centraliza verticalmente */
+        margin-bottom: 20px;
+        /* Adiciona espaço entre a imagem e o texto */
+    }
+
+    .image-wrapper img {
+        width: 275px;
+    }
+    .text-wrapper {
+        margin-left: 0;
+        /* Remove a margem à esquerda */
+        text-align: center;
+        /* Centraliza o texto no modo responsivo */
+    }
+    .text-wrapper h2{
+        font-size: 10px;
     }
 }
