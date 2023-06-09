@@ -236,7 +236,7 @@ main {
     top: 100px;
     margin: auto;
     overflow-y: hidden;
-    padding: auto;
+    padding: 35px;
 }
 
 .animated {
@@ -260,34 +260,31 @@ main {
     text-align: center;
 }
 
-
-
-
 .pj {
+    width: 329px;
+    height: 400px;
     margin: auto;
-    background-color: #0E091B;
-    padding: 15px;
-    cursor: pointer;
-    border-radius: 20px;
     overflow: hidden;
-    border: 1px solid #6E6C72;
-    transition: .5s;
+    position: relative;
 }
-
 
 .pj img {
-    width: 100%;
+    width: 329px;
+    height: auto;
+    transition: transform 4s ease;
 }
 
-.pj img:hover {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+.pj:hover img {
+    transform: translateY(calc(-100% + 400px));
 }
+.pj:not(:hover) img {
+    transform: translateY(0);
+  }
 
-.pj:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-
+.grid-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #servicos {
@@ -503,13 +500,15 @@ main {
     .image-wrapper img {
         width: 275px;
     }
+
     .text-wrapper {
         margin-left: 0;
         /* Remove a margem à esquerda */
         text-align: center;
         /* Centraliza o texto no modo responsivo */
     }
-    .text-wrapper h2{
+
+    .text-wrapper h2 {
         font-size: 10px;
     }
 }

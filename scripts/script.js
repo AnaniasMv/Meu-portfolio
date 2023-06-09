@@ -58,11 +58,3 @@ let scrollInterval = setInterval(() => {
 	divToScroll.scrollTop += 100;
 }, 50);
 
-
-
-
-
-
-
-
-
